@@ -5,27 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <title>Meat 肉类</title>
-    <a href="Yale_Hotel_Menu_Home_Page.html">Back to Main Menu</a>
+    <a href="Yale_Hotel_Menu_Home_Page.html" style="color: tan"
+      >Back to Main Menu</a
+    >
     <div>
       <h1 style="color: darkgoldenrod">🥩Meat 肉类</h1>
-      <a href="#section-chicken">Chicken 🐓 鸡肉</a>
-      <a href="#section-pork">Pork 🐖 猪肉</a>
-      <a href="#section-beef">Beef 🐂 牛肉</a>
-      <a href="#section-lamb">Lamb 🐑 羊肉</a>
-      <a href="#section-seafood">Seafood 🦐 海鲜</a>
-      <hr />
     </div>
+    <div>
+      <a style="color: chocolate" class="top-links" href="#section-chicken"
+        >Chicken 🐓 鸡肉</a
+      >
+      <a style="color: salmon" class="top-links" href="#section-pork"
+        >Pork 🐖 猪肉</a
+      >
+      <a style="color: saddlebrown" class="top-links" href="#section-beef"
+        >Beef 🐂 牛肉</a
+      >
+      <a style="color: royalblue" class="top-links" href="#section-seafood"
+        >Seafood 🦐 海鲜</a
+      >
+    </div>
+    <hr />
   </head>
 
   <body>
     <div>
       <br />
-      <h2 id="section-chicken" style="color: tan">Chicken 🐓 鸡肉</h2>
+      <h2 id="section-chicken" class="t_chicken">Chicken 🐓 鸡肉</h2>
       <table class="t_chicken">
         <tr>
           <td class="t_chicken">
             <h3>盐酥鸡</h3>
-            <img src="images/meat/chicken/盐酥鸡.png" alt="盐酥鸡" />
+            <div class="foodpics">
+<img src="images/meat/chicken/盐酥鸡.png" alt="盐酥鸡" />
+            </div>
+            
             <p class="ingredients">
               主要材料:鸡胸肉,姜,料酒,生抽,蚝油,黑胡椒粉,鸡蛋清,盐,鸡蛋,玉米淀粉,面包糠,油
             </p>
@@ -61,9 +75,9 @@
         </tr>
       </table>
 
-      <a href="#">Jump to the Top</a>
+      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
 
-      <h2 id="section-pork" style="color: salmon">Pork 🐖 猪肉</h2>
+      <h2 id="section-pork" class="t_pork">Pork 🐖 猪肉</h2>
       <table class="t_pork">
         <tr>
           <td class="t_pork">
@@ -99,9 +113,9 @@
         </tr>
       </table>
 
-      <a href="#">Jump to the Top</a>
+      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
 
-      <h2 id="section-beef" style="color: saddlebrown">Beef 🐂 牛肉</h2>
+      <h2 id="section-beef" class="t_beef">Beef 🐂 牛肉</h2>
       <table class="t_beef">
         <tr>
           <td class="t_beef">
@@ -128,6 +142,23 @@
               主要材料:牛里脊,孜然,干辣椒,生粉,老抽,生抽,油,糖,葱姜蒜,盐,牙签
             </p>
           </td>
+
+          <td class="t_beef">
+            <h3>Beef Nachos</h3>
+            <div class="foodpics">
+              <img src="images/meat/beef/Beef_Nachos-2.jpg" alt="Beef Nachos" />
+              <img
+                class="foodpics-top"
+                src="images/meat/beef/Beef_Nachos-1.jpg"
+                alt="beef nachos"
+              />
+            </div>
+            <p class="ingredients">
+              主要材料:玉米片,牛肉末,牛油果,洋葱,葱,芝士, salsa, sour cream
+            </p>
+          </td>
+        </tr>
+        <tr>
           <td class="t_beef">
             <img
               class="learning_logo"
@@ -139,15 +170,13 @@
         </tr>
       </table>
 
-      <a href="#">Jump to the Top</a>
+      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
 
-      <h2 id="section-lamb" style="color: palevioletred">Lamb 🐑 羊肉</h2>
+      <h2 id="section-seafood" class="t_seafood">Seafood 🦐 海鲜</h2>
       <p>💔暂时没有,coming soon❤️~</p>
-      <a href="#">Jump to the Top</a>
-
-      <h2 id="section-seafood" style="color: royalblue">Seafood 🦐 海鲜</h2>
-      <p>💔暂时没有,coming soon❤️~</p>
-      <a href="#">Jump to the Top</a>
+      <br />
+      <br />
+      <br />
     </div>
   </body>
   <style>
@@ -184,8 +213,27 @@
       height: 80px;
       object-fit: contain;
     }
-    :link {
-      margin-right: 20px;
+    .foodpics {
+      position: relative;
+      display: inline-block;
+    }
+    .foodpics-top {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+    .foodpics:hover .foodpics-top {
+      display: inline;
+    }
+    .top-links {
+      font-family: cursive;
+      font-size: 20px;
+      text-align: center;
+    }
+    a.back-link {
+      text-align: center;
       font-style: italic;
       font-size: 20px;
       float: inline-end;
@@ -203,13 +251,20 @@
       margin-bottom: 50px;
     }
     .t_chicken {
-      border-color: tan;
+      border-color: chocolate;
+      color: chocolate;
     }
     .t_pork {
       border-color: salmon;
+      color: salmon;
     }
     .t_beef {
       border-color: saddlebrown;
+      color: saddlebrown;
+    }
+    .t_seafood {
+      border-color: royalblue;
+      color: royalblue;
     }
   </style>
 </html>
