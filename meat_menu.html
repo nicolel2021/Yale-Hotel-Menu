@@ -5,26 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <title>Meat 肉类</title>
-    <a href="Yale_Hotel_Menu_Home_Page.html" style="color: tan"
+    <a class="back-to" href="Yale_Hotel_Menu_Home_Page.html" style="color: tan"
       >Back to Main Menu</a
     >
     <div>
       <h1 style="color: darkgoldenrod">🥩Meat 肉类</h1>
     </div>
-    <div>
-      <a style="color: chocolate" class="top-links" href="#section-chicken"
-        >Chicken 🐓 鸡肉</a
-      >
-      <a style="color: salmon" class="top-links" href="#section-pork"
-        >Pork 🐖 猪肉</a
-      >
-      <a style="color: saddlebrown" class="top-links" href="#section-beef"
-        >Beef 🐂 牛肉</a
-      >
-      <a style="color: royalblue" class="top-links" href="#section-seafood"
-        >Seafood 🦐 海鲜</a
-      >
-    </div>
+
+    <ul class="selection">
+      <li>
+        <a style="color: chocolate" class="top-links" href="#section-chicken"
+          >Chicken 🐓 鸡肉</a
+        >
+      </li>
+      <li>
+        <a style="color: salmon" class="top-links" href="#section-pork"
+          >Pork 🐖 猪肉</a
+        >
+      </li>
+      <li>
+        <a style="color: saddlebrown" class="top-links" href="#section-beef"
+          >Beef 🐂 牛肉</a
+        >
+      </li>
+      <li>
+        <a style="color: royalblue" class="top-links" href="#section-seafood"
+          >Seafood 🦐 海鲜</a
+        >
+      </li>
+    </ul>
     <hr />
   </head>
 
@@ -37,9 +46,9 @@
           <td class="t_chicken">
             <h3>盐酥鸡</h3>
             <div class="foodpics">
-<img src="images/meat/chicken/盐酥鸡.png" alt="盐酥鸡" />
+              <img src="images/meat/chicken/盐酥鸡.png" alt="盐酥鸡" />
             </div>
-            
+
             <p class="ingredients">
               主要材料:鸡胸肉,姜,料酒,生抽,蚝油,黑胡椒粉,鸡蛋清,盐,鸡蛋,玉米淀粉,面包糠,油
             </p>
@@ -74,8 +83,6 @@
           </td>
         </tr>
       </table>
-
-      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
 
       <h2 id="section-pork" class="t_pork">Pork 🐖 猪肉</h2>
       <table class="t_pork">
@@ -112,8 +119,6 @@
           </td>
         </tr>
       </table>
-
-      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
 
       <h2 id="section-beef" class="t_beef">Beef 🐂 牛肉</h2>
       <table class="t_beef">
@@ -180,6 +185,10 @@
     </div>
   </body>
   <style>
+    a.back-to {
+      position: fixed;
+    }
+
     hr {
       width: 85%;
       margin-left: auto;

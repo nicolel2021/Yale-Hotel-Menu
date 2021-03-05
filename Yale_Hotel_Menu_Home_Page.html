@@ -6,122 +6,79 @@
       div {
         text-align: center;
       }
-
+      body {
+        font-family: Comic Sans MS, Comic Sans, cursive, Weibei SC;
+      }
       .yhmenu {
-        font-weight: bold;
-        font-size: 25px;
-        color: palevioletred;
+        font-size: 22px;
+        color: white;
+        width: auto;
+        margin-top: 180px;
+        margin-bottom: 35px;
+        margin-left: 60px;
+        margin-right: 60px;
+        border-radius: 10px;
+        border: black 1px solid;
+        background-color: black;
       }
       .welcome {
         font-style: italic;
+        font-size: 13px;
+        margin-bottom: 70px;
+      }
+      .category {
         font-size: 20px;
       }
-      body {
-        background-image: url(images/logo/home_food_logo.jpg);
 
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: auto;
+      a {
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        font-size: 26px;
+        background-color: black;
+        border-radius: 10px;
+      }
+      a.meat:hover {
+        color: darkgoldenrod;
+      }
+      a.vege:hover {
+        color: forestgreen;
+      }
+      a.dessert:hover {
+        color: pink;
+      }
+      a.rice-and-noodles:hover {
+        color: wheat;
       }
     </style>
   </head>
   <body>
-    <br />
-    <div>
-      <p class="yhmenu">Yale Hotel Menu 耶鲁酒店菜单</p>
+    <div class="yhmenu">
+      <h1>Yale Hotel Menu 耶鲁酒店菜单</h1>
     </div>
 
-    <div>
-      <p class="welcome">Welcome~ 欢迎光临~</p>
+    <div class="welcome">
+      <h2>Welcome~ 欢迎光临~</h2>
     </div>
 
-    <div>
-      <p>
-        <img
-          class="meatemoji"
-          src="images/logo/meat_emoji.png"
-          alt="meat emoji"
-        />
-        <a href="meat_menu.html" style="color: darkgoldenrod">Meat 肉类</a>
-        <style>
-          img.meatemoji {
-            width: 20px;
-            height: 20px;
-            margin-top: -5px;
-            margin-bottom: -5px;
-          }
-        </style>
-      </p>
-      <p>
-        <img
-          class="vegeemoji"
-          src="images/logo/vege_emoji.png"
-          alt="vege emoji"
-        />
-        <a href="vege_menu.html" style="color: forestgreen">Vegetable 蔬菜</a>
-        <style>
-          img.vegeemoji {
-            width: 20px;
-            height: 20px;
-            margin-bottom: -5px;
-            margin-top: -20px;
-          }
-        </style>
-      </p>
-      <p>
-        <img
-          class="dessertemoji"
-          src="images/logo/dessert_emoji.png"
-          alt="dessert emoji"
-        />
-        <a href="dessert_menu.html" style="color: pink">Dessert 甜品</a>
-        <style>
-          img.dessertemoji {
-            width: 20px;
-            height: 20px;
-            margin-top: -20px;
-            margin-bottom: -5px;
-          }
-        </style>
-      </p>
-      <p>
-        <img
-          class="noodlesemoji"
-          src="images/logo/rnn_emoji.png"
-          alt="rice&noodles emoji"
-        />
-        <a href="rice_and_noodles_menu.html" style="color: wheat"
-          >Rice & Noodles 饭和面</a
+    <div class="category">
+    
+        <a class="meat" href="meat_menu.html">🥩 Meat_肉类 🥩</a>
+      
+        <a class="vege" href="vege_menu.html"> 🥬 Vegetable_蔬菜 🥬</a>
+
+        <a class="dessert" href="dessert_menu.html">🍰 Dessert_甜品 🍰</a>
+
+        <a class="rice-and-noodles" href="rice_and_noodles_menu.html">
+          🍜 Rice & Noodles_饭和面 🍜</a
         >
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <style>
-          .noodlesemoji {
-            width: 23px;
-            height: 23px;
-            margin-bottom: -5px;
-          }
-        </style>
       </p>
     </div>
   </body>
