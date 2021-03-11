@@ -1,0 +1,114 @@
+body {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif, Weibei SC;
+  color: darkgoldenrod;
+  text-align: center;
+}
+#meat-header {
+  color: white;
+  background-color: darkgoldenrod;
+  width: 85%;
+  height: 200px;
+  line-height: 200px;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+#navbar ul {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+#navbar li {
+  display: inline;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+#navbar a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  padding: 10px;
+}
+#navbar a:hover {
+  color: white;
+  background-color: darkgoldenrod;
+  border-radius: 8px;
+}
+a:visited {
+  color: darkgoldenrod;
+}
+.side-nav {
+  list-style: none;
+  right: 0;
+  bottom: 2cm;
+  text-align: left;
+  position: fixed;
+}
+.side-nav a:hover {
+  color: white;
+  background-color: darkgoldenrod;
+  border-radius: 2px;
+}
+
+h1 {
+  font-size: 39px;
+}
+h2 {
+  margin-top: 150px;
+}
+
+hr {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px;
+  border-radius: 8px;
+  background-color: darkgoldenrod;
+  border-style: hidden;
+}
+
+a.m-selection {
+  color: white;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+img.learning_logo {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+}
+.foodpics {
+  position: relative;
+  display: inline-block;
+}
+.foodpics-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.foodpics:hover .foodpics-top {
+  display: inline;
+}
+
+table,
+th,
+td {
+  width: 1200px;
+  height: 500px;
+  border: 2px dotted;
+  border-collapse: collapse;
+  margin-left: 110px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

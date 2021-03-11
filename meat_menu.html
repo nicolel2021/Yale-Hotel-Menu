@@ -5,39 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <title>Meat 肉类</title>
-    <a class="back-to" href="Yale_Hotel_Menu_Home_Page.html" style="color: tan"
-      >Back to Main Menu</a
-    >
-    <div>
-      <h1 style="color: darkgoldenrod">🥩Meat 肉类</h1>
-    </div>
-
-    <ul class="selection">
-      <li>
-        <a style="color: chocolate" class="top-links" href="#section-chicken"
-          >Chicken 🐓 鸡肉</a
-        >
-      </li>
-      <li>
-        <a style="color: salmon" class="top-links" href="#section-pork"
-          >Pork 🐖 猪肉</a
-        >
-      </li>
-      <li>
-        <a style="color: saddlebrown" class="top-links" href="#section-beef"
-          >Beef 🐂 牛肉</a
-        >
-      </li>
-      <li>
-        <a style="color: royalblue" class="top-links" href="#section-seafood"
-          >Seafood 🦐 海鲜</a
-        >
-      </li>
-    </ul>
-    <hr />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <header id="meat-header">
+      <div>
+        <h1>🥩Meat 肉类</h1>
+      </div>
+    </header>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="#section-chicken">Chicken 🐓 鸡肉</a>
+        </li>
+        <li>
+          <a href="#section-pork">Pork 🐖 猪肉</a>
+        </li>
+        <li>
+          <a href="#section-beef">Beef 🐂 牛肉</a>
+        </li>
+        <li>
+          <a href="#section-seafood">Seafood 🦐 海鲜</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <nav class="side-nav">
+      <a href="index.html">Main Menu</a>
+      <br />
+      <a href="#" class="back-link">Top</a>
+    </nav>
+
     <div>
       <br />
       <h2 id="section-chicken" class="t_chicken">Chicken 🐓 鸡肉</h2>
@@ -175,105 +174,8 @@
         </tr>
       </table>
 
-      <a href="#" style="color: tan" class="back-link">Jump to the Top</a>
-
       <h2 id="section-seafood" class="t_seafood">Seafood 🦐 海鲜</h2>
       <p>💔暂时没有,coming soon❤️~</p>
-      <br />
-      <br />
-      <br />
     </div>
   </body>
-  <style>
-    a.back-to {
-      position: fixed;
-    }
-
-    hr {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 5px;
-      border-radius: 10px;
-      background-color: peachpuff;
-      border-style: hidden;
-    }
-    h1 {
-      font-family: "Times New Roman", Times, serif;
-    }
-    h2 {
-      font-family: cursive;
-      margin-top: 150px;
-    }
-    p.ingredients {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-    div {
-      text-align: center;
-    }
-    img {
-      width: 350px;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    img.learning_logo {
-      width: 200px;
-      height: 80px;
-      object-fit: contain;
-    }
-    .foodpics {
-      position: relative;
-      display: inline-block;
-    }
-    .foodpics-top {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 99;
-    }
-    .foodpics:hover .foodpics-top {
-      display: inline;
-    }
-    .top-links {
-      font-family: cursive;
-      font-size: 20px;
-      text-align: center;
-    }
-    a.back-link {
-      text-align: center;
-      font-style: italic;
-      font-size: 20px;
-      float: inline-end;
-    }
-    table,
-    th,
-    td {
-      width: 1200px;
-      height: 500px;
-      border: 2px dotted;
-      border-collapse: collapse;
-      margin-left: 110px;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-    .t_chicken {
-      border-color: chocolate;
-      color: chocolate;
-    }
-    .t_pork {
-      border-color: salmon;
-      color: salmon;
-    }
-    .t_beef {
-      border-color: saddlebrown;
-      color: saddlebrown;
-    }
-    .t_seafood {
-      border-color: royalblue;
-      color: royalblue;
-    }
-  </style>
 </html>
