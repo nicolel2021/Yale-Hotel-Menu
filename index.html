@@ -7,7 +7,7 @@
         text-align: center;
       }
       body {
-        font-family:'Times New Roman', Times, serif, Weibei SC;
+        font-family: "Times New Roman", Times, serif, Weibei SC;
       }
       .yhmenu {
         font-size: 22px;
@@ -28,6 +28,11 @@
       }
       .category {
         font-size: 20px;
+        list-style: none;
+        text-align: center;
+      }
+      .category li {
+        display: inline;
       }
 
       a {
@@ -55,6 +60,11 @@
       a.rice-and-noodles:hover {
         color: wheat;
       }
+      #main-footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 140px;
+      }
     </style>
   </head>
   <body>
@@ -66,18 +76,26 @@
       <h2>Welcome~ 欢迎光临~</h2>
     </div>
 
-    <div class="category">
-    
+    <ul class="category">
+      <li>
         <a class="meat" href="meat_menu.html">🥩 Meat_肉类 🥩</a>
-      
+      </li>
+      <li>
         <a class="vege" href="vege_menu.html"> 🥬 Vegetable_蔬菜 🥬</a>
-
+      </li>
+      <li>
         <a class="dessert" href="dessert_menu.html">🍰 Dessert_甜品 🍰</a>
-
+      </li>
+      <li>
         <a class="rice-and-noodles" href="rice_and_noodles_menu.html">
           🍜 Rice & Noodles_饭和面 🍜</a
         >
-      </p>
-    </div>
+      </li>
+    </ul>
   </body>
+  <footer id="main-footer">
+    <div>
+      <p>Copyright &copy; 2021 Yale Menu</p>
+    </div>
+  </footer>
 </html>

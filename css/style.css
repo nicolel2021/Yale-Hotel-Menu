@@ -1,12 +1,9 @@
 body {
-  font-size: 16px;
   font-family: "Times New Roman", Times, serif, Weibei SC;
-  color: darkgoldenrod;
-  text-align: center;
 }
-#meat-header {
+#main-header {
   color: white;
-  background-color: darkgoldenrod;
+  background-color: black;
   width: 85%;
   height: 200px;
   line-height: 200px;
@@ -15,29 +12,35 @@ body {
   margin-right: auto;
   border-radius: 8px;
   text-align: center;
+  font-size: 26px;
 }
 #navbar ul {
   padding: 0;
   list-style: none;
   font-size: 20px;
+  text-align: center;
 }
 #navbar li {
   display: inline;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 #navbar a {
   text-decoration: none;
-  color: darkgoldenrod;
+  color: black;
   padding: 10px;
 }
 #navbar a:hover {
-  color: white;
-  background-color: darkgoldenrod;
+  color: darkgoldenrod;
+  background-color: black;
   border-radius: 8px;
 }
+
+a {
+  color: black;
+}
 a:visited {
-  color: darkgoldenrod;
+  color: black;
 }
 .side-nav {
   list-style: none;
@@ -47,43 +50,41 @@ a:visited {
   position: fixed;
 }
 .side-nav a:hover {
-  color: white;
-  background-color: darkgoldenrod;
+  background-color: black;
   border-radius: 2px;
 }
-
-h1 {
-  font-size: 39px;
+#meat a:hover {
+  color: darkgoldenrod;
+}
+#vege a:hover {
+  color: forestgreen;
+}
+#dessert a:hover {
+  color: pink;
+}
+#riceandnoodles a:hover {
+  color: wheat;
 }
 h2 {
-  margin-top: 150px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-
 hr {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   height: 5px;
   border-radius: 8px;
-  background-color: darkgoldenrod;
+  background-color: black;
   border-style: hidden;
-}
-
-a.m-selection {
-  color: white;
 }
 
 img {
   width: 350px;
   height: 350px;
   object-fit: cover;
-  border-radius: 8px;
-}
-
-img.learning_logo {
-  width: 200px;
-  height: 80px;
-  object-fit: contain;
+  border-radius: 5px;
 }
 .foodpics {
   position: relative;
@@ -100,15 +101,23 @@ img.learning_logo {
   display: inline;
 }
 
-table,
-th,
-td {
-  width: 1200px;
-  height: 500px;
-  border: 2px dotted;
-  border-collapse: collapse;
-  margin-left: 110px;
+footer {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
+
+.row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 250px;
+  padding: 10px 50px;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 33.3%;
+  margin: 20px 0px;
+}
+
+/* above is meat menu */
