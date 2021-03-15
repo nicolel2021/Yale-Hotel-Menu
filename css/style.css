@@ -12,7 +12,7 @@ body {
   margin-right: auto;
   border-radius: 8px;
   text-align: center;
-  font-size: 26px;
+  
 }
 #navbar ul {
   padding: 0;
@@ -22,8 +22,7 @@ body {
 }
 #navbar li {
   display: inline;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0px,15px;
 }
 #navbar a {
   text-decoration: none;
@@ -38,6 +37,7 @@ body {
 
 a {
   color: black;
+  text-decoration: none;
 }
 a:visited {
   color: black;
@@ -46,7 +46,7 @@ a:visited {
   list-style: none;
   right: 0;
   bottom: 2cm;
-  text-align: left;
+  line-height: 25px;
   position: fixed;
 }
 .side-nav a:hover {
@@ -65,24 +65,36 @@ a:visited {
 #riceandnoodles a:hover {
   color: wheat;
 }
+
 h2 {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
+
 hr {
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
   height: 5px;
-  border-radius: 8px;
+  border-radius: 1px;
   background-color: black;
   border-style: hidden;
 }
 
-img {
-  width: 350px;
-  height: 350px;
+.row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 50px 10px 60px;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 30%;
+  margin: 0px 10px 5px;
+}
+
+.column img {
+  width: 100%;
+  height: 350px ;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -105,19 +117,7 @@ footer {
   text-align: center;
 }
 
-.row {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 250px;
-  padding: 10px 50px;
-}
-
-.column {
-  text-align: center;
-  float: left;
-  width: 33.3%;
-  margin: 20px 0px;
-}
-
-/* above is meat menu */
+@media only screen and (min-width:1024px) {
+  .row {
+    padding: 10px 50px 10px 100px;
+  }
